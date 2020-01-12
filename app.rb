@@ -7,6 +7,6 @@ class App < Sinatra::Base
   end
 
   post '/' do
-    @user_input = params
+    @user_input = params[:string]
   end
 end
