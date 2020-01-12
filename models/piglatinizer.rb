@@ -8,6 +8,6 @@ class PigLatinizer
 
   def convert
     "Converted Text"
-    if text.scan(/[^aeiou]/)
+    text.scan(/[^aeiou]/)
   end
 end
