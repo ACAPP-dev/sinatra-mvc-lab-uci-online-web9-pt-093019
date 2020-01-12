@@ -12,7 +12,7 @@ class PigLatinizer
     if text.match?(/^[aeiou]/)
       text + "way"
     elsif text.match?(/^[^aeiou]{2}/)
-
+      text_array[2..-1].join() + text_array[0..1].join + "ay"
     end
 
 
