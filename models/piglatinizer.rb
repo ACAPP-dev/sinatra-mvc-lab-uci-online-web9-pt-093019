@@ -14,8 +14,8 @@ class PigLatinizer
       p text_array[3..-1].join() + text_array[0..2].join + "ay"
     elsif text.match?(/^[^aeiou]{2}/)
       p text_array[2..-1].join() + text_array[0..1].join + "ay"
-    elsif text.match?(/^[^aeiou]{2}/)
-      p  text_array[2..-1].join() + text_array[0..1].join + "ay"
+    elsif text.match?(/^[^aeiou]{1}/)
+      p  text_array[1..-1].join() + text_array[0].join + "ay"
     end
   end
 end
