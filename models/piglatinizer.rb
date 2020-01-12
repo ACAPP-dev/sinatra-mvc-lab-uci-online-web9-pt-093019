@@ -7,6 +7,6 @@ class PigLatinizer
   end
 
   def convert
-
+    "Converted Text"
   end
 end
