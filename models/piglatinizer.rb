@@ -10,9 +10,9 @@ class PigLatinizer
     "Converted Text"
     if text.match?(/\A[aeiou]/)
       text + "way"
-      elsif 
+      elsif
     end
     
-      
+
   end
 end
