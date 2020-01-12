@@ -11,7 +11,7 @@ class PigLatinizer
     text_array = text.split(//)
     if text.match?(/^[aeiou]/)
       text + "way"
-    elsif text.match?(/^[aeiou]{2}/)
+    elsif text.match?(/^[^aeiou]{2}/)
 
     end
 
