@@ -7,6 +7,8 @@ class PigLatinizer
   end
 
   def convert
+    sentence_array = text.split(/ /)
+    
     text_array = text.split(//)
     if text.match?(/^[aeiou]/)
       text + "way"
