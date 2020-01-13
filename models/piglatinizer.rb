@@ -3,11 +3,11 @@ class PigLatinizer
   attr_accessor :text
 
   def initialize
-    @text = @word.downcase
+    @text = @word
   end
 
   def piglatinize(text)
-    sentence_array = text.split(/ /)
+    sentence_array = text.split(/ /).downcase
     final_result = []
     sentence_array.each do |word|
       text_array = word.split(//)
