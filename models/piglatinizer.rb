@@ -12,14 +12,15 @@ class PigLatinizer
     sentence_array.each do |word|
       text_array = word.split(//)
       if word.match?(/^[aeiou]/)
-        word + "way"
+        pig_word = word + "way"
       elsif word.match?(/^[^aeiou]{3}/)
-        p text_array[3..-1].join() + text_array[0..2].join + "ay"
+        pig_word = text_array[3..-1].join() + text_array[0..2].join + "ay"
       elsif word.match?(/^[^aeiou]{2}/)
-        p text_array[2..-1].join() + text_array[0..1].join + "ay"
+        pig_word = text_array[2..-1].join() + text_array[0..1].join + "ay"
       elsif word.match?(/^[^aeiou]{1}/)
-        p  text_array[1..-1].join() + text_array[0] + "ay"
+        pig_word = text_array[1..-1].join() + text_array[0] + "ay"
       end
+      final_result << pig_word
     end
   end
 end
