@@ -6,7 +6,7 @@ class PigLatinizer
     @text = @word.downcase
   end
 
-  def piglatinize
+  def piglatinize(text)
     sentence_array = text.split(/ /)
     final_result = []
     sentence_array.each do |word|
