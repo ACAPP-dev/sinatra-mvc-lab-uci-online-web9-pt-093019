@@ -8,16 +8,18 @@ class PigLatinizer
 
   def convert
     sentence_array = text.split(/ /)
-    
-    text_array = text.split(//)
-    if text.match?(/^[aeiou]/)
-      text + "way"
-    elsif text.match?(/^[^aeiou]{3}/)
-      p text_array[3..-1].join() + text_array[0..2].join + "ay"
-    elsif text.match?(/^[^aeiou]{2}/)
-      p text_array[2..-1].join() + text_array[0..1].join + "ay"
-    elsif text.match?(/^[^aeiou]{1}/)
-      p  text_array[1..-1].join() + text_array[0] + "ay"
+    final_result = []
+    sentence_array.each do |word|
+      text_array = text.split(//)
+      if text.match?(/^[aeiou]/)
+        text + "way"
+      elsif text.match?(/^[^aeiou]{3}/)
+        p text_array[3..-1].join() + text_array[0..2].join + "ay"
+      elsif text.match?(/^[^aeiou]{2}/)
+        p text_array[2..-1].join() + text_array[0..1].join + "ay"
+      elsif text.match?(/^[^aeiou]{1}/)
+        p  text_array[1..-1].join() + text_array[0] + "ay"
+      end
     end
   end
 end
